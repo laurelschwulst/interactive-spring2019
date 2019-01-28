@@ -5,22 +5,92 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta charset="utf-8" />
     <link rel="icon" href="#" />
+    <style>
+
+    body {
+      margin: 0;
+      color: #5e085e;
+      font-size: 22px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    #top {
+      height: 100vh;
+      background: #5e085e;
+      color: white;
+      -webkit-font-smoothing: antialiased;
+      font-size: 22px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    #container {
+      max-width: 600px;
+      margin: 2em auto 6em;
+    }
+
+    hr {
+      border: 0;
+      border-bottom: 1px dashed white;
+      margin: 2em 0;
+    }
+
+    h1 {
+      font-weight: normal;
+      font-size: 64px;
+    }
+
+    h2 {
+      text-transform: uppercase;
+    }
+
+    li {
+      margin-bottom: 1em;
+    }
+
+    #sections {
+      background: white;
+      color: #5e085e;
+      padding: 1em;
+      margin-top: 2em;
+    }
+
+    #sections li {
+      margin-bottom: 0;
+    }
+
+    </style>
   </head>
   <body>
-    <h1>Jeera Thai</h1>
-    <i>Healthy Thai Kitchen</i>
 
-    <!-- <hr />
+    <div id="top">
 
-    Sections:
-    <ul>
-      <li>
-        <a href="#aahan-wang">Aahan Wang</a>
-      </li>
-      <li>
-        <a href="#thom">Thom</a>
-      </li>
-    </ul> -->
+      <h1>Jeera Thai</h1>
+      <i>Healthy Thai Kitchen</i>
+
+    </div>
+
+    <div id="container">
+
+    <div id="sections">
+
+      Sections:
+      <ul>
+        <li>
+          <a href="#aahan-wang">Aahan Wang</a>
+        </li>
+        <li>
+          <a href="#thom">Thom</a>
+        </li>
+        <li>
+          <a href="#yum">Yum</a>
+        </li>
+      </ul>
+
+    </div>
 
     <hr />
 
@@ -97,7 +167,7 @@
       </li>
     </ol>
 
-    <h2>Yum <em>(Salad)</em></h2>
+    <h2 id="yum">Yum <em>(Salad)</em></h2>
     <ol>
       <li>
         🌶🌶 <strong>Somtum</strong><br />
@@ -295,6 +365,8 @@
     <strong>Please let the server know the degree of your desired spiciness.</strong><br />
 
     <em>Thoroughly cooking meats, poultry, seafood, shellfish or eggs reduces the risk of food bourne illness</em>
+
+  </div>
 
   </body>
 </html>
