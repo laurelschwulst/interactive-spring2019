@@ -17,7 +17,7 @@
 
     #container {
       max-width: 600px;
-      margin: 2em auto 6em;
+      margin: 0 auto 6em;
     }
 
     hr {
@@ -29,6 +29,7 @@
     h1 {
       font-weight: normal;
       font-size: 64px;
+      margin-top: 0;
     }
 
     h2 {
@@ -41,13 +42,43 @@
 
     #sections {
       background: white;
-      color: #5e085e;
+      color: #850385;
+      font-size: 14px;
       padding: 1em;
-      margin-top: 2em;
+      position: fixed;
+      top: 1em;
+      left: 1em;
+      font-weight: bold;
     }
 
     #sections li {
       margin-bottom: 0;
+    }
+
+    #sections ul {
+      padding-left: 1em;
+      margin-bottom: 0;
+    }
+
+    a {
+      color: white;
+    }
+
+    #sections a {
+      color: #850385;
+      text-decoration: none;
+    }
+
+    #sections a:hover {
+      background: yellow;
+    }
+
+    footer {
+      font-size: 15px;
+    }
+
+    footer .warning {
+      opacity: 0.4;
     }
 
     </style>
@@ -59,24 +90,32 @@
     <h1>Jeera Thai</h1>
     <i>Healthy Thai Kitchen</i>
 
-    <!-- <div id="sections">
+    <hr />
+
+    <!-- Sourced from: https://stackoverflow.com/questions/37610457/fixed-menu-not-working -->
+
+    <div id="sections">
 
       Sections:
       <ul>
         <li>
-          <a href="#aahan-wang">Aahan Wang</a>
+          <a href="#aahan-wang">Aahan Wang (Appetizers)</a>
         </li>
         <li>
-          <a href="#thom">Thom</a>
+          <a href="#thom">Thom (Soup)</a>
         </li>
         <li>
-          <a href="#yum">Yum</a>
+          <a href="#yum">Yum (Salad)</a>
+        </li>
+        <li>
+          <a href="#aahaan-pised">Aahaan Pised (Chef Special)</a>
+        </li>
+        <li>
+          <a href="#lunch-special">Lunch Special</a>
         </li>
       </ul>
 
-    </div> -->
-
-    <hr />
+    </div>
 
     <p>
       216 Crown Street<br />
@@ -99,7 +138,7 @@
     </p>
 
     <p>
-      www.jeerathai.com<br />
+      <a href="http://www.jeerathai.com">www.jeerathai.com</a><br />
       Facebook: @jeerathai
     </p>
 
@@ -175,7 +214,7 @@
       </li>
     </ol>
 
-    <h2>Aahaan Pised <em>(Chef Special)</em></h2>
+    <h2 id="aahaan-pised">Aahaan Pised <em>(Chef Special)</em></h2>
     <strong><em>Served with jasmine Rice</em></strong>
 
     <ol>
@@ -208,7 +247,7 @@
 
     <hr />
 
-    <h2>Lunch Special Starts at $7.95</h2>
+    <h2 id="lunch-special">Lunch Special Starts at $7.95</h2>
 
     <p>
       Mon–Fri (11:30am–2:30pm)
@@ -346,11 +385,13 @@
 
     <hr />
 
-    <strong>Please let the server know the degree of your desired spiciness.</strong><br />
-
-    <em>Thoroughly cooking meats, poultry, seafood, shellfish or eggs reduces the risk of food bourne illness</em>
+    <footer>
+      <strong>
+        Please let the server know the degree of your desired spiciness.<br /><br />
+        <span class="warning">Thoroughly cooking meats, poultry, seafood, shellfish or eggs reduces the risk of food bourne illness.</span>
+      </strong>
+    </footer>
 
   </div>
-
   </body>
 </html>
