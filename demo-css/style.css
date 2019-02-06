@@ -1,0 +1,78 @@
+/* * {
+  border: 5px solid pink;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: snow;
+  /* text-align: center; */
+  margin: 0;
+  font-size: 32px;
+}
+
+#header {
+  background: pink;
+  height: 100vh;
+  font-size: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header span {
+  padding-bottom: 0.25em;
+}
+
+p {
+  color: red;
+  /* border: 0.5em solid red; */
+  /* padding: 1em; */
+  /* text-align: center; */
+  /* width: 20em; */
+  margin: 1em auto;
+}
+
+p span {
+  display: inline-block;
+  background: yellow;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+
+p span.tall {
+  height: 400px;
+}
+
+.very-special {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  z-index: 7;
+}
+
+nav {
+  background: yellow;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  z-index: 8;
+}
+
+.special-image {
+  width: 300px;
+  float: left;
+  padding: 10px;
+  padding-left: 40px;
+}
+
+.clearer {
+  clear: both;
+}
