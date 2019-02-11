@@ -19,8 +19,8 @@
 		width: 130px;
     height: 100px;
     position: absolute;
-    top: 70px;
-    left: 100px;
+    top: 150px;
+    left: 160px;
 	}
 
 	#lamp #orb {
@@ -48,6 +48,53 @@
     left: 25px;
 	}
 
+	#glass {
+		width: 90px;
+		height: 170px;
+		position: absolute;
+		top: 50px;
+		right: 360px;
+		border-left: 1px solid white;
+		border-right: 1px solid white;
+	}
+
+	#glass #top {
+		position: absolute;
+    height: 30px;
+    width: 100%;
+    top: -15px;
+		left: -1px;
+    border-radius: 50%;
+    border: 1px solid white;
+	}
+
+	#glass #water {
+		position: absolute;
+		top: 60%;
+		height: 40%;
+		width: 100%;
+		background: white;
+		opacity: 0.4;
+	}
+
+	#glass #water-top {
+		position: absolute;
+		top: calc(60% - 15px);
+		height: 30px;
+		width: 100%;
+		border-radius: 50%;
+		background: white;
+	}
+
+	#glass #bottom {
+		position: absolute;
+    height: 30px;
+    width: 100%;
+    bottom: -15px;
+    border-radius: 50%;
+    background: #60656f;
+	}
+
 	</style>
 
 </head>
@@ -61,6 +108,12 @@
 			<div id="lamp">
 				<div id="orb"></div>
 				<div id="stand"></div>
+			</div>
+			<div id="glass">
+				<div id="top"></div>
+				<div id="water-top"></div>
+				<div id="water"></div>
+				<div id="bottom"></div>
 			</div>
 
 		<!-- this ends the canvas div. do not delete this! -->
