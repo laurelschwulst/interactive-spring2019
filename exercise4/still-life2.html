@@ -95,6 +95,94 @@
     background: #60656f;
 	}
 
+	#cats {
+		width: 100px;
+    height: 121px;
+    position: absolute;
+    top: 200px;
+    left: 290px;
+	}
+
+	#cats #dome {
+		width: 100%;
+		height: 80%;
+		position: absolute;
+		background: white;
+		opacity: 0.2;
+		border-top-right-radius: 50%;
+		border-top-left-radius: 50%;
+	}
+
+	#cats #stand {
+		width: 100%;
+		height: 20%;
+		position: absolute;
+		bottom: 0;
+		background: red;
+	}
+
+	#cats #stand-bottom {
+		width: 100%;
+		height: 20px;
+		border-radius: 50%;
+		position: absolute;
+		bottom: -10px;
+		background: red;
+	}
+
+	#cats #stand-top {
+		width: 100%;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15px;
+    background: #f04d4d;
+	}
+
+	#cats #cat {
+    height: 66px;
+    width: 45px;
+    position: absolute;
+    left: 27px;
+    bottom: 20px;
+	}
+
+	#cats #cat #body {
+		width: 100%;
+		height: 60%;
+		position: absolute;
+		bottom: 0;
+		background: gold;
+		border-top-right-radius: 50%;
+		border-top-left-radius: 50%;
+	}
+
+	#cats #cat #head {
+		width: 100%;
+		height: 40%;
+		border-radius: 50%;
+		position: absolute;
+		top: 0;
+		background: gold;
+		-webkit-animation-duration: .5s;
+	  -webkit-animation-name: bob;
+	  -webkit-animation-iteration-count: infinite;
+	  -webkit-animation-direction: alternate;
+	  -webkit-animation-timing-function: ease-in-out;
+	}
+
+	@-webkit-keyframes bob {
+
+		from {
+			transform: rotate(5deg);
+		}
+
+		to {
+			transform: rotate(-5deg);
+		}
+
+	}
+
 	</style>
 
 </head>
@@ -114,6 +202,16 @@
 				<div id="water-top"></div>
 				<div id="water"></div>
 				<div id="bottom"></div>
+			</div>
+			<div id="cats">
+				<div id="dome"></div>
+				<div id="stand"></div>
+				<div id="stand-top"></div>
+				<div id="stand-bottom"></div>
+				<div id="cat">
+					<div id="head"></div>
+					<div id="body"></div>
+				</div>
 			</div>
 
 		<!-- this ends the canvas div. do not delete this! -->
