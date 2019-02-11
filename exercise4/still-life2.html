@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>CSS Still Life 2</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="canvas.css">
+
+	<style>
+	.canvas {
+		/* if you want to change the background of your canvas, do it here */
+		background: white;
+	}
+
+	/* this is where you can style the objects in your still life */
+	#triangle {
+		width: 0;
+		height: 0;
+		border-left: 100px solid transparent;
+		border-right: 100px solid transparent;
+		border-bottom: 200px solid yellow;
+		position: absolute;
+		top: 160px;
+		left: 100px;
+	}
+
+	#square {
+		width: 200px;
+		height: 200px;
+		background: red;
+		position: absolute;
+		top: 160px;
+		left: 350px;
+	}
+
+	#circle {
+		width: 200px;
+		height: 200px;
+		background: blue;
+		border-radius: 200px;
+		position: absolute;
+		top: 160px;
+		left: 600px;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+		<!-- this starts the canvas div. do not delete this! -->
+    <div class="canvas">
+
+			<!-- below is where you put your objects in your still life -->
+    	<div id="square"></div>
+    	<div id="circle"></div>
+    	<div id="triangle"></div>
+
+		<!-- this ends the canvas div. do not delete this! -->
+    </div>
+
+</body>
+
+</html>
