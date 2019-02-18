@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #FAFAFA;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+nav#top  {
+  background: white;
+  border-bottom: 1px solid #E5E5E5;
+  height: 76px;
+}
+
+.logo {
+  width: 103px;
+  height: 38px;
+  background: url('images/logo.png');
+  background-size: 100% 100%;
+  position: absolute;
+  top: 20px;
+}
+
+.search-container {
+  padding: 5px;
+}
+
+.search {
+  width: 215px;
+  height: 28px;
+  margin: 20px auto;
+  background: #fafafa;
+  border: solid 1px #dbdbdb;
+  border-radius: 4px;
+}
+
+.icons {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.icon-profile {
+  width: 40px;
+  height: 40px;
+  background: url('images/icon-profile.png');
+  background-size: 100% 100%;
+  display: inline-block;
+}
+
+.icon-heart {
+  width: 36px;
+  height: 36px;
+  background: url('images/icon-heart.png');
+  background-size: 100% 100%;
+  display: inline-block;
+}
+
+.container {
+  max-width: 936px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#profile {
+  margin-top: 67px;
+}
+
+.avatar {
+  text-align: center;
+  width: 33.333%;
+  float: left;
+}
+
+.metadata {
+  width: 66.667%;
+  float: left;
+}
+
+.clearer {
+  clear: both;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: url('images/avatar.jpg');
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+#posts {
+  margin-top: 100px;
+}
+
+#posts img {
+  max-width: 32%;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 6px;
+  transition: 0.4s all ease-out;
+  -webkit-transition: 0.4s all ease-out;
+  -moz-transition: 0.4s all ease-out;
+  -o-transition: 0.4s all ease-out;
+}
+
+#posts img:nth-child(3n+0) {
+  margin-right: 0;
+  /* border: 5px solid yellow; */
+}
+
+#posts img:hover {
+  /* transform: rotate(90deg); */
+}
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+footer a {
+  color: #6C98B7;
+  margin-right: 1em;
+  text-decoration: none;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#overlay img {
+  width: 100%;
+}
+
+#posts img:hover,
+img.current {
+  -webkit-animation-duration: 0.25s;
+  -webkit-animation-name: jiggle;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes jiggle {
+	0% {
+		transform: rotate(0deg);
+	}
+  24% {
+    transform: rotate(3deg);
+  }
+	25% {
+		transform: rotate(1deg);
+	}
+	50% {
+		transform: rotate(-2deg);
+	}
+  55% {
+    transform: rotate(-4deg);
+  }
+	100% {
+		transform: rotate(4deg);
+	}
+}
+
+@media print {
+
+  nav#top {
+    display: none !important;
+  }
+
+}
