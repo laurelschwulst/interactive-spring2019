@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Organism in CSS</title>
+    <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: Arial, sans-serif;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #ground {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40vh;
+      background: #82990b;
+    }
+
+    #organism {
+      background: #fea1f3;
+      width: 40vw;
+      height: 40vh;
+      border-radius: 50%;
+      text-align: center;
+      padding: 3em;
+      position: absolute;
+      bottom: 25vh;
+      left: 30vw;
+      transition: filter 300ms ease-in;
+    }
+
+    #organism:hover {
+      filter: blur(30px);
+    }
+
+    #organism .eye {
+      background: black;
+      width: 1em;
+      height: 1em;
+      margin: 1em;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+    }
+    
+    </style>
+  </head>
+
+  <body>
+
+    <div id="ground"></div>
+
+    <div id="organism">
+      <div class="eye"></div>
+      <div class="eye"></div>
+    </div>
+
+  </body>
+</html>
